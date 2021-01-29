@@ -28,7 +28,8 @@ describe('King', () => {
         
       // moves.should.have.length(1);
        moves.should.deep.include.members([Square.at(0, 5), Square.at(0, 3)]);
-    }); it('can move 1 square diagonally ', () => {
+    }); 
+    it('can move 1 square diagonally ', () => {
         const king = new King(Player.WHITE);
         
         board.setPiece(Square.at(0, 4), king);

@@ -10,16 +10,13 @@ export default class Rook extends Piece {
         let location = board.findPiece(this);
         let rookArray = [];
         let i=1;
-        //for(let i = 1; i < 8; i++) {
-            while(i<8){
-             if(location.row+i<9 && location.col+i<9){
+        while(i<8){
+            if(location.row+i<9 && location.col+i<9){
            rookArray.push(Square.at(location.row+i,location.col));
          rookArray.push(Square.at(location.row,location.col+i));
-         i++;
-                       
-                            
-                                        }
-                
+         i++;                
+         }
+         
                        }
                        return rookArray     
     }
