@@ -26,6 +26,11 @@ export default class Bishop extends Piece {
         }
         i++;
         }
-        return bishopArray
+
+        const resultBishopArray = bishopArray.filter(function(locat){
+            return board.getPiece(locat) == undefined
+                    })
+                   
+        return resultBishopArray
     }
 }

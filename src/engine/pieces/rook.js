@@ -18,7 +18,11 @@ export default class Rook extends Piece {
          }
          
                        }
-                       return rookArray     
+ const resultRookArray = rookArray.filter(function(locat){
+  return board.getPiece(locat) == undefined
+})
+                              
+     return resultRookArray     
     }
      
 }

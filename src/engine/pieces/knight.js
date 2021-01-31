@@ -10,6 +10,11 @@ export default class Knight extends Piece {
         let location = board.findPiece(this);
        
         let knightArray = [Square.at(location.row+2, location.col+1), Square.at(location.row+1, location.col+2), Square.at(location.row+2, location.col-1), Square.at(location.row+1, location.col-2),Square.at(location.row-2, location.col-1), Square.at(location.row-1, location.col-2), Square.at(location.row-2, location.col+1), Square.at(location.row-1, location.col+2)];
+    // const resultKnightArray = knightArray.filter(function(locat){
+    //     return board.getPiece(locat) == undefined
+    // })
+
+    // return resultKnightArray
     return knightArray
     }
     }
